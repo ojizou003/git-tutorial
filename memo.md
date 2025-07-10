@@ -24,8 +24,56 @@ Hotfix branches? [hotfix/]
 Support branches? [support/] 
 Version tag prefix? [] 
 Hooks and filters directory? [/home/ojizou003/works/git-tutorial/.git/hooks] 
-
 ### Featureブランチの作成
 ```bash
 git flow feature start <feature-name>
 ```
+### Featureブランチの終了
+```bash
+git flow feature finish <feature-name>
+```
+### git status
+- ファイルの変更情報を確認
+- git addする前に確認するために使う
+
+### ステージング
+```bash
+git add <file>
+```
+- 変更のあるすべてのファイルをステージングする場合は、以下のコマンドを使用します。
+```bash
+git add .
+```
+### コミット
+```bash
+git commit -m "commit message"
+```
+### プッシュ
+```bash
+git push origin <branch-name>
+```
+### プル
+```bash
+git pull origin <branch-name>
+```
+### ブランチの一覧表示
+```bash
+git branch
+```
+### ブランチの切り替え
+```bash
+git switch <branch-name>
+```
+### ブランチの削除
+```bash
+git branch -d <branch-name>
+```
+### リモートブランチの削除
+```bash
+git push origin --delete <branch-name>
+```
+### リモートリポジトリの追加
+```bash
+git remote add origin <repository-url>
+```
+
